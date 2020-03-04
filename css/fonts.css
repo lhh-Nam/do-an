@@ -12,3 +12,13 @@
     font-family: Lexend;
     src: url('../font/Lexend_Exa/LexendExa-Regular.ttf');
 }
+
+@font-face{
+    font-family: OpenSans;
+    src: url('../font/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face{
+    font-family: Anton;
+    src: url('../font/Anton/Anton-Regular.ttf');
+}
