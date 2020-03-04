@@ -33,6 +33,7 @@ html,body {
 /*------------Global Classes-------------*/
 a{
     text-decoration: none;
+    color: var(--midnight);
 }
 
 .flex-row{
@@ -275,7 +276,6 @@ main .site-content{
 
 main .post-content{
     width: 100%;
-    margin-bottom: 5rem;
 }
 
 main .site-content .post-content > .post-img, .post-title{
@@ -302,10 +302,21 @@ main .site-content .post-content > .post-img > div {
 
 main .site-content .post-content > .post-img .img{
     width: 100%;
+    height: 500px;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-img .img-popular{
+    width: 100%;
+    height: 200px;
     transition: all 1s ease;
 }
 
 main .site-content .post-content > .post-img .img:hover{
+    transform: scale(1.3);
+}
+
+main .site-content .post-content > .post-img .img-popular:hover{
     transform: scale(1.3);
 }
 
@@ -314,8 +325,67 @@ main .post-content .post-title a{
     font-size: 1.5rem;
 }
 
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: var(--sky);
+}
+
+.site-content .pagination{
+    justify-content: center;
+    color: var(--midnight);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: .3rem;
+    font-family: var(--Lexend);
+}
+
+.site-content .pagination .pages{
+    background: var(--text-gray);
+    color: var(--white);
+}
 /* --x-- Site Content --x-- */
 
+/* ----- Sidebar ----- */
 
+.site-content > .sidebar .category-list{
+    font-family: var(--OpenSans);
+}
+
+.site-content > .sidebar .category-list .list-items{
+    background: var(--plant);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a{
+    color: black;
+}
+
+.site-content .sidebar .popular-post .post-content{
+    padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 11rem;
+}
+
+.site-content .sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+
+/* --x-- Sidebar --x-- */
 
 /* ------x-----Main Content------x----- */
